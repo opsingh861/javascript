@@ -94,6 +94,6 @@ response.then((dataStream)=>{  // showing the promise
 })
 // .catch((error)=>{ // catching the error
 //     console.log("do whatever you want here")
-//     console.log(error)
+//     console.log(error) 
 // })
 
