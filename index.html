@@ -10,7 +10,9 @@
     <!-- <script src="promises.js"></script> -->
     <!-- <script src="./index.js"></script> -->
     <!-- <script defer src="./Dom.js"></script> -->
-    <script defer src="./AsyncAndAwait.js"></script>
+    <!-- <script defer src="./AsyncAndAwait.js"></script> -->
+    <script defer src="./EventListner.js"></script>
+
     <title>Document</title>
     <style>
         div.clock {
@@ -29,7 +31,7 @@
             transition: 0.2s ease-out;
         }
 
-        div.second::after{
+        div.second::after {
             content: "";
             width: 75px;
             height: 4px;
@@ -37,10 +39,12 @@
             position: absolute;
             border-end-end-radius: 10px;
         }
-        div.minute{
+
+        div.minute {
             transition: 0.2s ease-out;
         }
-        div.minute::after{
+
+        div.minute::after {
             content: "";
             width: 75px;
             height: 4px;
@@ -48,7 +52,8 @@
             position: absolute;
             border-end-end-radius: 10px;
         }
-        div.cover{
+
+        div.cover {
             width: 15px;
             height: 15px;
             background-color: black;
@@ -60,13 +65,15 @@
 </head>
 
 <body>
-    <h1 id="timer">0</h1>
+    <!-- <h1 id="timer">0</h1>
     <div class="clock">
         <div class="cover"></div>
         <div class="second"></div>
         <div class="minute"></div>
     </div>
-    <ul></ul>
+    <ul></ul> -->
+    <!-- <button onclick="handleClick('hi')">Click</button> using this we can also add click event on button -->
+    <button>Click</button>
 </body>
 
 </html>
