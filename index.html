@@ -7,13 +7,66 @@
     <!-- add js file -->
     <!-- <script src="./ArrayMethods.js"></script> -->
     <!-- <script src="./WebApi.js"></script> -->
-    <script src="promises.js"></script>
-    <script src="./index.js"></script>
+    <!-- <script src="promises.js"></script> -->
+    <!-- <script src="./index.js"></script> -->
+    <!-- <script defer src="./Dom.js"></script> -->
+    <script defer src="./AsyncAndAwait.js"></script>
     <title>Document</title>
+    <style>
+        div.clock {
+            width: 150px;
+            height: 150px;
+            border: 2px solid crimson;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            transform: rotate(-90deg);
+        }
+
+        div.second {
+            transition: 0.2s ease-out;
+        }
+
+        div.second::after{
+            content: "";
+            width: 75px;
+            height: 4px;
+            background-color: yellow;
+            position: absolute;
+            border-end-end-radius: 10px;
+        }
+        div.minute{
+            transition: 0.2s ease-out;
+        }
+        div.minute::after{
+            content: "";
+            width: 75px;
+            height: 4px;
+            background-color: black;
+            position: absolute;
+            border-end-end-radius: 10px;
+        }
+        div.cover{
+            width: 15px;
+            height: 15px;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            z-index: 1000;
+        }
+    </style>
 </head>
 
 <body>
-
+    <h1 id="timer">0</h1>
+    <div class="clock">
+        <div class="cover"></div>
+        <div class="second"></div>
+        <div class="minute"></div>
+    </div>
+    <ul></ul>
 </body>
 
 </html>

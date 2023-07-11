@@ -84,10 +84,10 @@
 
 const response = fetch('http://jsonplaceholder.typicode.com/users') //fetch returns promise
 
-response.then((dataStream)=>{  // showing the promise
+response.then((dataStream) => {  // showing the promise
     console.log(dataStream)
     const jsonData = dataStream.json() // again it is returning promise with data as array
-    jsonData.then((data)=>{
+    jsonData.then((data) => {
         console.log(data)
     })
 
@@ -96,5 +96,12 @@ response.then((dataStream)=>{  // showing the promise
 //     console.log("do whatever you want here")
 //     console.log(error) 
 // })
+
+// we can also reduce it further to
+
+response
+    .then(dataStream => dataStream.json) // first fetch is returning us a promise then we (.json) function will conver it into json and return it as promise
+    .then(jsonData => console.log(jsonData)) // previous promise is stored in jsondata and we consoling it
+    .catch(error => console.log(error))
 
 
