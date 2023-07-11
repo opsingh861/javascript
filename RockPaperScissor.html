@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor game</title>
+    <script defer src="./RockPaperScissor.js"></script>
+</head>
+
+<body>
+    <div>
+        <h3>Computer Score: <span id="comp"></span></h3>
+        <h3>My Score: <span id="me"></span></h3>
+    </div>
+
+    <h2 style="color: rgb(30, 0, 255); font-size: large;" id="message">
+        <h3>Rules</h3>
+        <ul>
+            <li>Rock beats Scissors</li>
+            <li>Paper beats Rock</li>
+            <li>Scissor beats Paper</li>
+        </ul>
+    </h2>
+
+    <div class="button">
+        <button onclick="game(0)">Rock</button>
+        <button onclick="game(1)">Paper</button>
+        <button onclick="game(2)">Scissor</button>
+    </div>
+</body>
+
+</html>
