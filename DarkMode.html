@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode</title>
+    <script defer src="./DarkMode.js"></script>
+    <style>
+        * {
+            transition: 0.5s ease-out;
+        }
+
+        body {
+            background-color: white;
+        }
+
+        body.dark {
+            background-color: black;
+            color: white;
+        }
+
+        body.dark h1 {
+            color: plum;
+        }
+    </style>
+</head>
+
+<body class="">
+    <button onclick="modeChange()">Mode</button>
+    <h1>This is heading.</h1>
+</body>
+
+</html>
